@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-LIST</title>
+</head>
+<body>
+    
+
+<header>
+    <h1>My To-Do List</h1>
+    <p>Check the boxes to mark tasks as complete. Keep track of your progress below.</p>
+</header>
+
+<hr>
+
+<section>
+    <h3>Progress</h3>
+    <p>Tasks Completed: 2 out of 6 (33%)</p>
+    <progress value="33" max="100"></progress>
+</section>
+
+<hr>
+
+
+<section>
+    <h2>Work Tasks</h2>
+    <ul>
+        <li><input type="checkbox"> Finish project report (Due: Aug 20) - [High Priority]</li>
+        <li><input type="checkbox"> Send weekly email (Due: Aug 17)</li>
+        <li><input type="checkbox"> Prepare meeting notes - [Medium Priority]</li>
+    </ul>
+
+    <h2>Personal Tasks</h2>
+    <ul>
+        <li><input type="checkbox" checked> Buy groceries (Due: Aug 16) - [Low Priority]</li>
+        <li><input type="checkbox"> Call Mom (Due: Aug 18)</li>
+        <li><input type="checkbox" checked> Water plants (Due: Aug 15)</li>
+    </ul>
+</section>
+
+<hr>
+
+
+<section>
+    <h3>Suggest a New Task</h3>
+    <form>
+        <label>Task: <input type="text" name="task" required></label><br><br>
+
+        <label>Description:<br>
+            <textarea name="description" rows="3" cols="30"></textarea>
+        </label><br><br>
+
+        <label>Priority:</label>
+        <label><input type="radio" name="priority" value="high"> High</label>
+        <label><input type="radio" name="priority" value="medium"> Medium</label>
+        <label><input type="radio" name="priority" value="low"> Low</label>
+        <br><br>
+
+        <label>Category:</label>
+        <select name="category">
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+            <option value="shopping">Shopping</option>
+        </select>
+        <br><br>
+
+        <label><input type="checkbox" name="done"> Mark as done</label><br><br>
+
+        <input type="submit" value="Add Task">
+    </form>
+</section>
+
+<hr>
+
+
+<footer>
+    <p>Created by Siham Mohammed August 15, 2025</p>
+    <p>Last updated: August 15, 2025</p>
+</footer>
+
+</body>
+
+</html>
