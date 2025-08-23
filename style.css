@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+    margin: 0px;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+header {
+    text-align: center;
+}
+h2,h3{
+    color: crimson;
+    font-family: 'Courier New', Courier, monospace;
+}
+p,li,label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(232, 99, 51);
+
+}
+
+h1{
+    color: rgb(158, 7, 7); 
+    text-shadow: 3px 3px 5px rgb(90, 10, 10);
+}
+.progress{
+    text-align: center;
+    padding: 10px;
+}
+progress{
+    width: 250px;
+    height: 10px;
+    appearance: none;
+}
+progress::-webkit-progress-value{
+    background-color: rgb(158, 7, 7);
+    border-radius: 10px;
+}
+progress::-webkit-progress-bar{
+    background-color: rgb(243, 91, 91);
+    border-radius: 10px;
+}
+nav{
+    margin-top: 0px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(230, 174, 155);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar a{
+    color: rgb(146, 45, 8);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color:rgb(232, 123, 87) ;
+}
+.navbar li{
+    float: left;
+     text-align: center;
+}
+ul{
+    list-style: none;
+}
+
+
+.task, .input{
+    border: 2px solid saddlebrown;
+    border-radius: 20px;
+    padding: 25px;
+    height: 450px;
+    width: 50%;
+    float:left ;
+}
+.task .worktask{
+    margin-bottom: 15px;
+
+}
+.checkbox{
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 2px solid saddlebrown ;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.checkbox:checked{
+    background-color:crimson ;
+}
+.radio{
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 2px solid saddlebrown ;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.radio:checked{
+    background-color:crimson ;
+}
+.category{
+    display: inline;
+    float: left;
+}
+.select{
+    position: relative;
+    
+    width: 200px;
+}
+.select select{
+    width: 60%;
+    appearance: none;
+    padding: 10px 30px 10px 15px;
+    border: 2px solid saddlebrown;
+    border-radius: 8px;
+    background-color: bisque;
+    color: crimson;
+    font-size: 16px;
+    cursor: pointer;
+}
+.select i{
+    position: absolute;
+    right: 30px;
+    top: 20%;
+}
+.select select option{
+    cursor: pointer;
+    background-color: bisque;
+}
+.select select option:hover { 
+    background: rgb(241, 127, 150) ;
+}
+
+.submit{
+    background-color: rgb(202, 93, 114);
+    color: beige;
+    padding: 7px;
+    border: none;
+    border-radius: 50px;
+}
+.submit:hover{
+    background-color: rgb(219, 21, 21) ;
+}
+footer{
+    display: block;
+    clear: both;
+    text-align: center;
+    background-color:rgb(244, 217, 179) ;
+    padding: 25px;
+}
+div a{
+    padding: 20px;
+    color: rgb(158, 7, 7); 
+}
+div a:hover{
+    color: rgb(219, 21, 21); 
+}
+footer p{
+    font-size:larger ;
+    font-variant: small-caps;
+    font-weight: bold;
+}
